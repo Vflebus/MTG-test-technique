@@ -16,7 +16,7 @@
                 <div v-for="reviewer in reviewers" :key="reviewer.name" class="flex gap-[20px] w-full shrink-0">
                   <img class="h-[60px] w-[60px] object-cover rounded-[5px]" src="/imgs/reviewer1.svg" />
                   <div class="flex flex-col justify-center gap-[5px]">
-                    <p class="font-semibold leading-[140%] tracking-[0.2px] uppercase">{{ reviewer.name }}</p>
+                    <p class="font-semibold leading-[140%] tracking-[1%] uppercase">{{ reviewer.name }}</p>
                     <p class="text-sm leading-[140%]">{{ reviewer.position }}</p>
                   </div>
                 </div>

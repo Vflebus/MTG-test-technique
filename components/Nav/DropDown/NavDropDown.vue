@@ -1,17 +1,13 @@
 <template>
   <div class="relative">
     <button class="transition-all duration-300">{{ name }} <Icon name="mdi-light:chevron-down" class="translate-y-1/4" /></button>
+    <Teleport to="#root"><div class="fixed top-0 left-0 w-screen h-screen bg-brandBlack/40" v-if="selected" @click="$emit('unselect')"></div></Teleport>
     <Transition>
       <div
         v-if="selected"
-        class="absolute top-[calc(100%+15px)] left-1/2 -translate-x-1/2 rounded-[5px] w-[268px] min-h-6 flex flex-col gap-[15px] p-[15px] transition-all duration-300"
-        :class="colorScheme === 'light' ? 'bg-brandWhite text-brandBlack' : 'bg-brandBlack text-brandWhite'"
+        class="absolute top-[calc(100%+15px)] left-1/2 -translate-x-1/2 rounded-[5px] w-[268px] min-h-6 flex flex-col gap-[15px] p-[15px] transition-all duration-300 bg-brandWhite text-brandBlack"
       >
-        <Icon
-          name="tabler:triangle-filled"
-          class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 transition-all duration-300"
-          :class="colorScheme === 'light' ? 'text-brandWhite' : 'text-brandBlack'"
-        />
+        <Icon name="tabler:triangle-filled" class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 transition-all duration-300 text-brandWhite" />
         <slot />
       </div>
     </Transition>
@@ -22,9 +18,9 @@
 interface Props {
   name: string;
   selected: boolean;
-  colorScheme: "light" | "dark";
 }
 defineProps<Props>();
+defineEmits(["unselect"]);
 </script>
 
 <style scoped>

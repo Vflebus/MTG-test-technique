@@ -15,7 +15,7 @@
             <li>
               <button
                 id="cards"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[1%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
                 :class="activeTab?.id === 'cards' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -25,7 +25,7 @@
             <li>
               <button
                 id="desposits"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[1%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
                 :class="activeTab?.id === 'desposits' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -35,7 +35,7 @@
             <li>
               <button
                 id="payments"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[1%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
                 :class="activeTab?.id === 'payments' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -46,7 +46,7 @@
               <button
                 id="credit"
                 ref="credit"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[1%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
                 :class="activeTab?.id === 'credit' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -56,7 +56,7 @@
             <li>
               <button
                 id="data"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[1%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
                 :class="activeTab?.id === 'data' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -66,7 +66,7 @@
             <li>
               <button
                 id="risk"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[1%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
                 :class="activeTab?.id === 'risk' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >

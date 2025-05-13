@@ -32,7 +32,7 @@
           </div>
           <div class="flex justify-between grow">
             <div class="w-[160px] flex flex-col gap-[30px]">
-              <p class="text-brandWhite/50 uppercase text-sm tracking-[1.5px]">Your needs</p>
+              <p class="text-brandWhite/50 uppercase text-sm tracking-[11%]">Your needs</p>
               <div class="flex flex-col gap-[20px]">
                 <NuxtLink to="/" class="leading-[140%] tracking-[1%]">Secure</NuxtLink>
                 <NuxtLink to="/" class="leading-[140%] tracking-[1%]">Improve</NuxtLink>
