@@ -54,15 +54,15 @@ onMounted(() => {
   if (!section.value) return;
   ScrollTrigger.create({
     trigger: section.value,
-    start: "15% 20%",
-    end: "15% 20%",
+    start: "top 5%",
+    end: "top 5%",
     onEnter: () => emit("enter"),
     onEnterBack: () => emit("leave"),
   });
   ScrollTrigger.create({
     trigger: section.value,
-    start: "bottom top",
-    end: "bottom top",
+    start: "bottom 5%",
+    end: "bottom 5%",
     onEnter: () => emit("leave"),
     onEnterBack: () => emit("enter"),
   });
