@@ -6,5 +6,9 @@ export default defineNuxtConfig({
     dirs: ['~/components']
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/fonts']
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/fonts'],
+
+  build: {
+    transpile: ['gsap']
+  },
 })
