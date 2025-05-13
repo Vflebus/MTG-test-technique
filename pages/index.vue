@@ -1,6 +1,6 @@
 <template>
   <div class="font-outfit flex flex-col gap-[180px]">
-    <Nav :colorScheme="colorScheme" />
+    <NavBar :colorScheme="colorScheme" />
     <SectionsHero @enter="colorScheme = 'light'" @leave="colorScheme = 'dark'" />
     <SectionsPresentation />
     <SectionsTestimonials @enter="colorScheme = 'light'" @leave="colorScheme = 'dark'" />

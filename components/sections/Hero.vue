@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-[768px] bg-brandBlack relative flex flex-col items-center text-brandWhite" ref="section">
+  <section class="w-full h-[771px] bg-brandBlack relative flex flex-col items-center text-brandWhite" ref="section">
     <div class="max-w-[1440px] flex flex-col items-center">
       <img class="w-full h-full absolute top-0 left-0 pointer-events-none" src="/imgs/hero-background-pattern.svg" alt="" />
       <h1

@@ -6,7 +6,7 @@
           <p class="uppercase text-sm 1.5px bg-gradient-to-r from-[#AE88FB] via-[#64B9FF] to-[#105AF6] inline-block w-fit text-transparent bg-clip-text">FAQ</p>
           <h2 class="font-semibold font-darkerGrotesque text-[65px] leading-[65px]">Frequently Asked Questions</h2>
         </div>
-        <p class="leading-[140%] tracking-[1%]">Fusce pellentesque nisi commodo erat arcu quam mauris malesuada eget. Fames maecenas arcu.</p>
+        <p class="leading-[140%] tracking-[0.2px]">Fusce pellentesque nisi commodo erat arcu quam mauris malesuada eget. Fames maecenas arcu.</p>
       </div>
       <div class="w-[575px] shrink-0 flex flex-col gap-[20px]">
         <SectionsFAQAccordion

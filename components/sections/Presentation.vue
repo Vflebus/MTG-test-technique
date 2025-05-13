@@ -3,7 +3,7 @@
     <section class="w-full flex flex-col items-center relative">
       <img src="/imgs/pres-bg-pattern-right.svg" alt="" class="absolute top-0 right-0 pointer-events-none" />
       <div class="max-w-[1440px] px-[160px]">
-        <div class="h-[768px]">
+        <div class="h-[771px]">
           <div class="h-[60px] w-[60px] bg-brandLightPurple rounded-[2px] flex justify-center items-center">
             <img src="/icons/cube.svg" alt="" class="w-[24px]" />
           </div>
@@ -26,7 +26,7 @@
     <section class="w-full flex flex-col items-center relative">
       <img src="/imgs/pres-bg-pattern-left.svg" alt="" class="absolute top-0 left-0 pointer-events-none" />
       <div class="max-w-[1440px] px-[160px]">
-        <div class="h-[768px] flex flex-col items-end">
+        <div class="h-[771px] flex flex-col items-end">
           <div>
             <div class="h-[60px] w-[60px] bg-brandLightBlue rounded-[2px] flex justify-center items-center">
               <img src="/icons/cube.svg" alt="" class="w-[24px]" />

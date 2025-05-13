@@ -1,13 +1,13 @@
 <template>
-  <section class="w-[full] h-[768px] flex flex-col items-center relative">
+  <section class="w-full h-[771px] flex flex-col items-center relative">
     <img src="/imgs/solutions-bg-pattern.svg" alt="" class="absolute top-0 right-0 pointer-events-none" />
-    <div class="w-[1027px] h-full flex flex-col items-center gap-[75px]">
+    <div class="h-full flex flex-col items-center gap-[75px]">
       <div class="w-[920px] flex flex-col items-center gap-[10px]">
-        <p class="uppercase text-sm tracking-[11%] bg-gradient-to-r from-[#AE88FB] via-[#64B9FF] to-[#105AF6] inline-block text-transparent bg-clip-text">Solutions</p>
+        <p class="uppercase text-sm tracking-[1.8px] bg-gradient-to-r from-[#AE88FB] via-[#64B9FF] to-[#105AF6] inline-block text-transparent bg-clip-text">Solutions</p>
         <h2 class="font-semibold font-darkerGrotesque text-[65px] leading-[65px] text-center">Ornare non dignissim enim lacus pretium nisi dui.</h2>
       </div>
       <div class="rounded-[15px] border-[1.5px] border-[#F5F2FD] p-[20px] pb-[60px] bg-[#FCFBFE] flex flex-col gap-[60px] relative">
-        <nav class="rounded-[15px] p-[10px] bg-brandLightPurple relative">
+        <nav class="rounded-[10px] p-[10px] bg-brandLightPurple relative">
           <div class="absolute bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:text-brandWhite transition-all duration-300 rounded-[5px] px-[15px] py-[5px] text-transparent" :style="overlayCoords">
             _
           </div>
@@ -15,7 +15,7 @@
             <li>
               <button
                 id="cards"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[0.2px] relative transition-all duration-300"
                 :class="activeTab?.id === 'cards' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -25,7 +25,7 @@
             <li>
               <button
                 id="desposits"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[0.2px] relative transition-all duration-300"
                 :class="activeTab?.id === 'desposits' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -35,7 +35,7 @@
             <li>
               <button
                 id="payments"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[0.2px] relative transition-all duration-300"
                 :class="activeTab?.id === 'payments' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -46,7 +46,7 @@
               <button
                 id="credit"
                 ref="credit"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[0.2px] relative transition-all duration-300"
                 :class="activeTab?.id === 'credit' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -56,7 +56,7 @@
             <li>
               <button
                 id="data"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[0.2px] relative transition-all duration-300"
                 :class="activeTab?.id === 'data' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -66,7 +66,7 @@
             <li>
               <button
                 id="risk"
-                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] relative transition-all duration-300"
+                class="rounded-[5px] px-[15px] py-[5px] leading-[140%] tracking-[0.2px] relative transition-all duration-300"
                 :class="activeTab?.id === 'risk' ? 'text-brandWhite' : 'hover:bg-gradient-to-r from-[#AE88FB] to-[#105AF6] hover:bg-clip-text hover:text-transparent'"
                 @click="setActiveCard"
               >
@@ -75,7 +75,7 @@
             </li>
           </ul>
         </nav>
-        <div class="w-full px-[33.5px]">
+        <div class="w-full">
           <Transition mode="out-in">
             <SectionsSolutionsCredit v-if="activeTab?.id === 'credit'" />
             <SectionsSolutionsCards v-else-if="activeTab?.id === 'cards'" />
