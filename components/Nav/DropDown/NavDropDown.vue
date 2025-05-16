@@ -1,7 +1,6 @@
 <template>
   <div class="relative">
     <button class="transition-all duration-300">{{ name }} <Icon name="mdi-light:chevron-down" class="translate-y-1/4" /></button>
-    <Teleport to="#root"><div class="fixed top-0 left-0 w-screen h-screen bg-brandBlack/40" v-if="selected" @click="$emit('unselect')"></div></Teleport>
     <Transition>
       <div
         v-if="selected"
